@@ -1,0 +1,91 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-image: linear-gradient(to right,#01022d,#000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 70%;
+    height: 700px;
+   
+    /*hena 3amel merge ben el sora we el background*/
+    background-image: 
+    linear-gradient(to right,#01022de5,#00000088),
+    url(Images/avatar.webp)
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container:hover{
+    background-image: 
+    linear-gradient(to right,#01022de5,transparent),
+    url(Images/avatar.webp)
+    ;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo a{
+    font-size:30px;
+    text-transform:uppercase;
+}
+.nav{
+    width: 60%;
+}
+ul{
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;  
+}
+li a:hover{
+    text-decoration: underline;
+    
+}
+.content{
+    width: 50%;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+}
+.content h2{
+    font-size: 120px;
+    text-transform: capitalize;
+}
+.content p{
+    letter-spacing:2px;
+    width: 350px;
+}
+.content button{
+    font-size: 30px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    
+}
+.content button:hover{
+    background:transparent ;
+    border:5px solid white;
+    color: white;
+    cursor: pointer;
+}
